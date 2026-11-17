@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Pixel Aura Graphic Studio — creative graphic design, branding, social media creatives, invitations and print design.">
+  <title>Pixel Aura Graphic Studio | Design That Makes You Shine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090909;--panel:#111110;--panel2:#171613;--gold:#d8b56b;--gold2:#f2d99b;--muted:#aaa49a;--line:rgba(216,181,107,.22);--white:#f7f3ea}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}.gold{color:var(--gold)}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:700}
+    header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.04em}
+    .mark{width:42px;height:42px;border:1px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold2);font-family:"Playfair Display";font-size:1.15rem;box-shadow:inset 0 0 18px rgba(216,181,107,.12)}
+    .brand small{display:block;color:var(--muted);font-size:.62rem;letter-spacing:.2em;font-weight:500}.links{display:flex;align-items:center;gap:28px;color:#d4cec2;font-size:.88rem}.links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17130b;font-weight:700;font-size:.88rem;transition:.2s;border:0;cursor:pointer}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn-outline{border:1px solid var(--line);background:transparent;color:var(--gold2)}
+    .menu{display:none;background:none;border:1px solid var(--line);color:var(--gold);border-radius:10px;padding:8px 11px;font-size:1.2rem}
+    .hero{position:relative;overflow:hidden;padding:110px 0 100px;background:radial-gradient(ellipse at 78% 40%,rgba(173,126,48,.18),transparent 38%),linear-gradient(180deg,#0b0b0a,#090909)}
+    .hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid rgba(216,181,107,.16);border-radius:50%;right:-80px;top:60px;box-shadow:0 0 0 36px rgba(216,181,107,.025),0 0 0 72px rgba(216,181,107,.02);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px;position:relative;z-index:1}.hero h1{font:600 clamp(3rem,6vw,5.5rem)/1.04 "Playfair Display",serif;margin:18px 0 22px;max-width:700px}.hero p{color:var(--muted);font-size:1.08rem;max-width:560px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .hero-art{min-height:390px;display:grid;place-items:center;position:relative}.art-card{width:min(390px,100%);aspect-ratio:1/1.05;border:1px solid rgba(216,181,107,.4);border-radius:22px;background:linear-gradient(145deg,#242017,#0d0d0c 58%);padding:28px;transform:rotate(3deg);box-shadow:0 28px 80px #000}.art-inner{height:100%;border:1px solid rgba(216,181,107,.25);border-radius:14px;display:flex;flex-direction:column;justify-content:space-between;padding:25px;background:radial-gradient(circle at 50% 40%,rgba(216,181,107,.2),transparent 48%)}.art-symbol{font:700 6rem "Playfair Display";text-align:center;color:var(--gold2);text-shadow:0 0 35px rgba(216,181,107,.4)}.art-caption{font-size:.72rem;letter-spacing:.22em;color:var(--gold);text-align:center}
+    section{padding:88px 0}.section-head{max-width:650px;margin-bottom:38px}.section-head h2{font:600 clamp(2.2rem,4vw,3.4rem)/1.15 "Playfair Display";margin:10px 0 14px}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:27px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#151411,#0e0e0d);min-height:205px}.service .num{color:var(--gold);font:600 1.1rem "Playfair Display"}.service h3{font:600 1.35rem "Playfair Display";margin:20px 0 8px}.service p{color:var(--muted);font-size:.92rem;margin:0}
+    .portfolio{background:#0e0e0d}.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.work{min-height:285px;border-radius:16px;overflow:hidden;position:relative;border:1px solid var(--line);display:flex;align-items:end;padding:22px;background:#191714}.work:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,rgba(255,221,153,.32),transparent 42%),linear-gradient(145deg,#4d381b,#17130d 55%,#090909)}.work:nth-child(2):before{background:radial-gradient(circle at 50% 35%,rgba(247,220,168,.3),transparent 40%),linear-gradient(145deg,#4c2330,#1a1015 58%,#090909)}.work:nth-child(3):before{background:radial-gradient(circle at 50% 35%,rgba(220,189,120,.3),transparent 42%),linear-gradient(145deg,#273c38,#101917 58%,#090909)}.work:nth-child(4):before{background:radial-gradient(circle at 50% 35%,rgba(230,197,124,.3),transparent 42%),linear-gradient(145deg,#34304c,#12111b 58%,#090909)}.work:nth-child(5):before{background:radial-gradient(circle at 50% 35%,rgba(255,213,135,.3),transparent 42%),linear-gradient(145deg,#56411d,#19140b 58%,#090909)}.work:nth-child(6):before{background:radial-gradient(circle at 50% 35%,rgba(230,206,155,.3),transparent 42%),linear-gradient(145deg,#383838,#141414 58%,#090909)}.work-content{position:relative;z-index:1}.work .tag{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}.work h3{font:600 1.45rem "Playfair Display";margin:5px 0 0}.work .visual-word{position:absolute;inset:25px 15px auto;text-align:center;font:600 clamp(2.4rem,5vw,4rem)/1 "Playfair Display";color:rgba(255,236,197,.85);text-shadow:0 8px 35px #000}
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price-card{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:25px}.price-card h3{font:600 1.25rem "Playfair Display";margin:0 0 8px}.price{font:600 2rem "Playfair Display";color:var(--gold2);margin:12px 0}.price small{font:400 .8rem "DM Sans";color:var(--muted)}.price-card p{color:var(--muted);font-size:.9rem;min-height:44px}.price-card .btn{width:100%;margin-top:10px}.note{font-size:.8rem;color:var(--muted);margin-top:18px}
+
+    .invite-section{background:#0b0b0a}
+    .invite-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .invite-card{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#191713,#0e0e0d);transition:transform .2s,border-color .2s}
+    .invite-card:hover{transform:translateY(-4px);border-color:rgba(242,217,155,.6)}
+    .invite-thumb{height:190px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 35%,rgba(216,181,107,.25),transparent 48%),linear-gradient(145deg,#4a351b,#17120b 60%,#090909)}
+    .invite-card:nth-child(2) .invite-thumb{background:radial-gradient(circle at 50% 35%,rgba(255,182,193,.28),transparent 48%),linear-gradient(145deg,#542b3b,#1c1118 60%,#090909)}
+    .invite-card:nth-child(3) .invite-thumb{background:radial-gradient(circle at 50% 35%,rgba(239,205,142,.28),transparent 48%),linear-gradient(145deg,#4b3c25,#17130d 60%,#090909)}
+    .invite-card:nth-child(4) .invite-thumb{background:radial-gradient(circle at 50% 35%,rgba(171,194,143,.25),transparent 48%),linear-gradient(145deg,#30412e,#11170f 60%,#090909)}
+    .invite-card:nth-child(5) .invite-thumb{background:radial-gradient(circle at 50% 35%,rgba(240,240,226,.25),transparent 48%),linear-gradient(145deg,#42403b,#171615 60%,#090909)}
+    .invite-card:nth-child(6) .invite-thumb{background:radial-gradient(circle at 50% 35%,rgba(224,176,116,.25),transparent 48%),linear-gradient(145deg,#47301f,#17100c 60%,#090909)}
+    .invite-thumb:before{content:"";position:absolute;width:118px;height:150px;border:1px solid rgba(242,217,155,.75);background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.015));box-shadow:0 14px 38px #0009;transform:rotate(-5deg)}
+    .invite-thumb:after{content:"✦";position:absolute;color:var(--gold2);font-size:2.8rem;text-shadow:0 0 20px rgba(242,217,155,.6)}
+    .invite-thumb span{position:relative;z-index:1;margin-top:88px;color:#f6e7c5;font:600 .66rem "Playfair Display";letter-spacing:.16em;text-transform:uppercase}
+    .invite-info{padding:19px}.invite-info h3{font:600 1.25rem "Playfair Display";margin:0 0 5px}.invite-info p{color:var(--muted);font-size:.86rem;margin:0 0 15px}.invite-info .btn{width:100%}
+    @media(max-width:800px){.invite-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.invite-grid{grid-template-columns:1fr}.invite-thumb{height:210px}}
+
+    .about-box{border:1px solid var(--line);border-radius:20px;padding:38px;background:radial-gradient(ellipse at 90% 0%,rgba(216,181,107,.13),transparent 40%),#11110f;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about-box h2{font:600 2.5rem "Playfair Display";margin:10px 0}.about-box p{color:var(--muted)}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{padding:20px;border:1px solid var(--line);border-radius:14px}.stat strong{display:block;color:var(--gold2);font:600 2rem "Playfair Display"}.stat span{font-size:.8rem;color:var(--muted)}
+    .contact{background:linear-gradient(180deg,#0e0e0d,#090909)}.contact-box{text-align:center;border:1px solid var(--line);border-radius:22px;padding:60px 24px;background:radial-gradient(ellipse at 50% 0%,rgba(216,181,107,.16),transparent 60%),#11110f}.contact-box h2{font:600 clamp(2.2rem,4vw,3.5rem) "Playfair Display";margin:10px 0}.contact-box p{color:var(--muted);max-width:570px;margin:0 auto 25px}
+    footer{border-top:1px solid rgba(255,255,255,.08);padding:25px 0;color:var(--muted);font-size:.82rem}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .wa-float{position:fixed;right:22px;bottom:22px;z-index:30;background:#25d366;color:#062d15;padding:13px 18px;border-radius:999px;font-weight:700;box-shadow:0 8px 28px #0008}
+    @media(max-width:800px){.links{display:none;position:absolute;top:76px;left:0;right:0;padding:20px 4%;background:#0d0d0c;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.nav>.btn{display:none}.hero{padding:75px 0}.hero-grid{grid-template-columns:1fr;gap:25px}.hero-art{min-height:300px}.art-card{max-width:310px}.services,.portfolio-grid,.pricing-grid{grid-template-columns:1fr 1fr}.about-box{grid-template-columns:1fr}.hero:after{right:-270px}}
+    @media(max-width:520px){section{padding:65px 0}.services,.portfolio-grid,.pricing-grid{grid-template-columns:1fr}.work{min-height:240px}.about-box{padding:25px}.wa-float{right:12px;bottom:12px}.hero h1{font-size:3.2rem}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="mark">PA</span><span>PIXEL AURA<small>GRAPHIC STUDIO</small></span></a>
+    <nav class="links" id="navLinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#invitations">Invitations</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#contact">Let's Talk</a><button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home"><div class="wrap hero-grid">
+    <div><div class="eyebrow">Creative thinking · Thoughtful design</div><h1>Design that makes your brand <span class="gold">shine.</span></h1><p>We turn ideas into memorable visuals. From brand identity to social media creatives and print designs, Pixel Aura gives every detail a creative touch.</p><div class="actions"><a class="btn" href="#portfolio">Explore Our Work</a><a class="btn btn-outline" href="#contact">Get a Free Quote</a></div></div>
+    <div class="hero-art"><div class="art-card"><div class="art-inner"><div class="eyebrow">Pixel Aura · Est. Creative</div><div class="art-symbol">Pa</div><div class="art-caption">IMAGINE · CREATE · INSPIRE</div></div></div></div>
+  </div></section>
+  <section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we create</div><h2>Creative services for <span class="gold">every idea.</span></h2><p>Consistent, polished visuals that help your business look professional and stand out.</p></div>
+    <div class="services">
+      <article class="service"><div class="num">01 / Identity</div><h3>Logo & Branding</h3><p>Distinctive logos and visual identities that make your brand recognisable.</p></article>
+      <article class="service"><div class="num">02 / Social</div><h3>Social Media Designs</h3><p>Eye-catching Instagram and Facebook posts, campaign creatives and stories.</p></article>
+      <article class="service"><div class="num">03 / Print</div><h3>Print & Promotional</h3><p>Banners, posters, business cards and print-ready promotional designs.</p></article>
+      <article class="service"><div class="num">04 / Celebrations</div><h3>Invitation Cards</h3><p>Wedding and event invitations designed to make every occasion special.</p></article>
+      <article class="service"><div class="num">05 / Video</div><h3>YouTube Thumbnails</h3><p>Bold, clear thumbnails designed to capture attention and communicate fast.</p></article>
+      <article class="service"><div class="num">06 / Custom</div><h3>Custom Creative Design</h3><p>Personalised visual solutions shaped around your brief and audience.</p></article>
+    </div>
+  </div></section>
+  <section class="portfolio" id="portfolio"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected work</div><h2>A little preview of our <span class="gold">creative world.</span></h2><p>Explore our dedicated invitation gallery below, and replace sample portfolio panels with your own work when ready.</p></div>
+    <div class="portfolio-grid">
+      <article class="work"><div class="visual-word">BRAND</div><div class="work-content"><div class="tag">Identity design</div><h3>Brand Identity</h3></div></article>
+      <article class="work"><div class="visual-word">Celebrate</div><div class="work-content"><div class="tag">Invitations</div><h3>Wedding Invitation</h3></div></article>
+      <article class="work"><div class="visual-word">SOCIAL</div><div class="work-content"><div class="tag">Digital campaign</div><h3>Social Media Creative</h3></div></article>
+      <article class="work"><div class="visual-word">BOLD IDEAS</div><div class="work-content"><div class="tag">Promotional</div><h3>Poster & Banner</h3></div></article>
+      <article class="work"><div class="visual-word">PLAY</div><div class="work-content"><div class="tag">YouTube design</div><h3>Video Thumbnail</h3></div></article>
+      <article class="work"><div class="visual-word">YOUR STORY</div><div class="work-content"><div class="tag">Custom artwork</div><h3>Creative Design</h3></div></article>
+    </div>
+  </div></section>
+
+  <section class="invite-section" id="invitations"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Made for your moments</div><h2>Invitation cards for <span class="gold">every occasion.</span></h2><p>Explore our invitation categories. Choose an occasion and contact us on WhatsApp for a custom design made around your event.</p></div>
+    <div class="invite-grid">
+      <article class="invite-card"><div class="invite-thumb"><span>Wedding Invitation</span></div><div class="invite-info"><h3>Wedding</h3><p>Elegant wedding invitations, traditional and modern styles.</p><a class="btn" href="#" data-service="Wedding Invitation Card">Enquire on WhatsApp</a></div></article>
+      <article class="invite-card"><div class="invite-thumb"><span>Birthday Celebration</span></div><div class="invite-info"><h3>Birthday</h3><p>Fun, colourful and personalised birthday invitations.</p><a class="btn" href="#" data-service="Birthday Invitation Card">Enquire on WhatsApp</a></div></article>
+      <article class="invite-card"><div class="invite-thumb"><span>Engagement Invite</span></div><div class="invite-info"><h3>Engagement</h3><p>Beautiful engagement invitations for your special announcement.</p><a class="btn" href="#" data-service="Engagement Invitation Card">Enquire on WhatsApp</a></div></article>
+      <article class="invite-card"><div class="invite-thumb"><span>Housewarming</span></div><div class="invite-info"><h3>Housewarming</h3><p>Warm and auspicious invitations for your new home.</p><a class="btn" href="#" data-service="Housewarming Invitation Card">Enquire on WhatsApp</a></div></article>
+      <article class="invite-card"><div class="invite-thumb"><span>In Loving Memory</span></div><div class="invite-info"><h3>Shradhanjali (RIP)</h3><p>Respectful memorial and remembrance invitation designs.</p><a class="btn" href="#" data-service="Shradhanjali Memorial Card">Enquire on WhatsApp</a></div></article>
+      <article class="invite-card"><div class="invite-thumb"><span>Special Occasion</span></div><div class="invite-info"><h3>Other Invitations</h3><p>Baby shower, naming ceremony, anniversary and more.</p><a class="btn" href="#" data-service="Custom Occasion Invitation Card">Enquire on WhatsApp</a></div></article>
+    </div>
+  </div></section>
+
+  <section id="pricing"><div class="wrap"><div class="section-head"><div class="eyebrow">Simple starting prices</div><h2>Quality design, <span class="gold">clear pricing.</span></h2><p>Starting rates for popular design services. Final quotes may vary with complexity and quantity.</p></div>
+    <div class="pricing-grid">
+      <article class="price-card"><h3>Logo Design</h3><div class="price">₹999 <small>/ project</small></div><p>A custom logo concept for your brand.</p><a class="btn" href="#" data-service="Logo Design">Enquire Now</a></article>
+      <article class="price-card"><h3>Social Media Post</h3><div class="price">₹199 <small>/ post</small></div><p>Instagram or Facebook creative design.</p><a class="btn" href="#" data-service="Social Media Post">Enquire Now</a></article>
+      <article class="price-card"><h3>Wedding Invitation</h3><div class="price">₹12 <small>/ piece</small></div><p>Invitation card design; printing/quantity to confirm.</p><a class="btn" href="#" data-service="Wedding Invitation">Enquire Now</a></article>
+      <article class="price-card"><h3>Banner / Poster</h3><div class="price">₹199 <small>/ design</small></div><p>Promotional and event artwork.</p><a class="btn" href="#" data-service="Banner / Poster">Enquire Now</a></article>
+      <article class="price-card"><h3>Business Card</h3><div class="price">₹399 <small>/ design</small></div><p>Professional business card layout.</p><a class="btn" href="#" data-service="Business Card">Enquire Now</a></article>
+      <article class="price-card"><h3>YouTube Thumbnail</h3><div class="price">₹199 <small>/ thumbnail</small></div><p>Attention-grabbing video thumbnail design.</p><a class="btn" href="#" data-service="YouTube Thumbnail">Enquire Now</a></article>
+    </div><p class="note">Prices are indicative starting rates. Please confirm the latest price, revisions, delivery time and print charges before placing an order.</p>
+  </div></section>
+  <section id="about"><div class="wrap"><div class="about-box"><div><div class="eyebrow">A little about us</div><h2>Good design is more than looks. It's your <span class="gold">first impression.</span></h2><p>Pixel Aura Graphic Studio is a creative design studio focused on helping individuals, creators and businesses communicate with confidence through thoughtful visual design.</p><p>From a single social post to a complete brand identity, we bring care, clarity and creativity to every project.</p><a class="btn" href="#contact">Start a Project</a></div><div class="stats"><div class="stat"><strong>12+</strong><span>Years of design experience</span></div><div class="stat"><strong>6</strong><span>Core service categories</span></div><div class="stat"><strong>1:1</strong><span>Personal project attention</span></div><div class="stat"><strong>∞</strong><span>Ideas to bring to life</span></div></div></div></div></section>
+  <section class="contact" id="contact"><div class="wrap"><div class="contact-box"><div class="eyebrow">Have a project in mind?</div><h2>Let's create something <span class="gold">beautiful.</span></h2><p>Tell us what you need. We'll discuss your idea, timeline and the right design solution for your brand.</p><a class="btn" id="mainWhatsApp" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a><p class="note">WhatsApp number needs to be added in the website settings before publishing.</p></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Pixel Aura Graphic Studio. All rights reserved.</span><span>Imagine · Create · Inspire</span></div></footer>
+<a class="wa-float" id="floatWhatsApp" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp ↗</a>
+<script>
+  // IMPORTANT: Replace the digits below with your WhatsApp number including country code.
+  // India example: 919876543210 (no +, spaces or dashes).
+  const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+  const studioName = "Pixel Aura Graphic Studio";
+  const messageFor = (service) => `Hello ${studioName}, I would like to enquire about ${service}. Please share the details.`;
+  function whatsappUrl(message){ return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`; }
+  function setupWhatsApp(){
+    const ready = /^\d{10,15}$/.test(WHATSAPP_NUMBER);
+    ["mainWhatsApp","floatWhatsApp"].forEach(id=>{
+      const el=document.getElementById(id);
+      el.href=ready?whatsappUrl(messageFor("your design services")):"#contact";
+      if(!ready) el.addEventListener("click",e=>{e.preventDefault();alert("Please add your WhatsApp number in index.html first. Search for WHATSAPP_NUMBER.");});
+    });
+    document.querySelectorAll("[data-service]").forEach(el=>{
+      el.href=ready?whatsappUrl(messageFor(el.dataset.service)):"#contact";
+      if(!ready) el.addEventListener("click",e=>{e.preventDefault();alert("Please add your WhatsApp number in index.html first. Search for WHATSAPP_NUMBER.");});
+    });
+  }
+  document.getElementById("year").textContent=new Date().getFullYear();
+  document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("navLinks").classList.toggle("open"));
+  document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("open")));
+  setupWhatsApp();
+</script>
+</body></html>
